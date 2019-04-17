@@ -38,6 +38,11 @@ figure>img{
 	width: 100%;
 }
 
+figcaption{
+	color: darkgrey;
+	font-size: 8px;
+}
+
 
 /* text */
 p{
