@@ -1,73 +1,125 @@
 /* reset */
-*  {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-ms-box-sizing: border-box;
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 /* document */
 body {
-	font-size: 1rem;
-	font-family: "URW Gothic L", "Helvetica", "Arial", sans-serif;
+    font-size: 1rem;
+    font-family: "URW Gothic L", "Helvetica", "Arial", sans-serif;
+    margin: 50px;
 }
 
-header{
-	background-color:dodgerblue;
+header {
+    background-color: #20609D;
 }
 
-iframe{
-	overflow: hidden;
-	height: 400px;
-	border: none;
+footer{
+    background: #20609D;
 }
 
+iframe#calculator {
+    overflow: hidden;
+    height: 400px;
+    border: none;
+}
 
+iframe#iphone-tricks{
+    height: 800px;
+    width: 1422px;
+}
 
 /* images */
-figure{
-	float: left;
-	width: 200px;
-	padding: 20px;
-	word-wrap: break-word;
+#merch-calc {
+    float: left;
+    width: 400px;
+    padding: 20px;
+    word-wrap: break-word;
 }
 
-figure>img{
-	width: 100%;
+figure > img {
+    width: 100%;
 }
 
-figcaption{
-	color: darkgrey;
-	font-size: 8px;
+figcaption {
+    color: darkgrey;
+    font-size: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
-
 
 /* text */
-p{
-	margin-bottom: 10px;
+p {
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
+div.last-edited {
+    border: 1px dotted;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+div.last-edited > p {
+    display: inline-block;
+    margin: auto;
+    padding-left: 5px;
+}
+
+div.last-edited > time {
+    float: right;
+    display: inline-block;
+    margin: auto;
+    padding-right: 5px;
+}
+
+sup {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
 
 /* lists */
+dt{
+    font-weight: bold;
+}
 
-
-
+dd{
+    padding-left: 15px;
+}
 /* table */
+tr>td:nth-child(1){
+    width: 400px;
+}
 
+td {
 
+}
 
 /* forms */
+.author>*{
+    display: block;
+}
 
+.legal>*{
+    display: block;
+}
 
 
 #font-size-form {
-	float: right;
+    float: right;
 }
+
 #font-size-form > label, #font-size-form > input, #font-size-form > output {
-	display: inline-block;
-	vertical-align: middle;
-	padding: 0; margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0;
+    margin: 0;
 }
 
