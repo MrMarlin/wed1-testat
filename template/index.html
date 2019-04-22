@@ -10,17 +10,17 @@
 </head>
 <body>
 <header>
-    <img src="../media/logo-wikipraktika.svg" id="header-logo" alt="wikipraktika Logo">
+    <a href="#"><img src="../media/logo-wikipraktika.svg" id="header-logo" alt="wikipraktika Logo"></a>
     <h1 id="header-title">Wikipraktika</h1>
 </header>
 <h1>Navigation</h1>
 <nav>
-    <ul>
+    <ul class="top-nav-ul">
         <li><a href="#">Hauptseite</a></li>
         <li><a href="#">Themenportale</a></li>
         <li>Mitmachen</li>
         <li>
-            <ul>
+            <ul class="nav-ul">
                 <li><a href="#">Artikel verbessern</a></li>
                 <li><a href="#">Neuen Artikel anlegen</a></li>
                 <li><a href="#">Autorenportal</a></li>
@@ -32,7 +32,7 @@
         </li>
         <li>Werkzeuge</li>
         <li>
-            <ul>
+            <ul class="nav-ul">
                 <li><a href="#">Links auf diese Seite</a></li>
                 <li><a href="#">Änderungen an verlinkten Seiten</a></li>
                 <li><a href="#">Permanenter Link</a></li>
@@ -41,10 +41,10 @@
         </li>
         <li>In anderen Sprachen</li>
         <li>
-            <ul>
-                <li id="italy"><a href="#">Italiano</a></li>
-                <li id="france"><a href="#">Français</a></li>
-                <li id="uk"><a href="#">English</a></li>
+            <ul class="nav-ul">
+                <li><a href="#" hreflang="it">Italiano</a></li>
+                <li><a href="#" hreflang="fr">Français</a></li>
+                <li><a href="#" hreflang="en">English</a></li>
             </ul>
         </li>
     </ul>
@@ -54,451 +54,495 @@
 <main>
 
     <h1>Taschenrechner</h1>
-    <h2>Taschenrechner</h2>
-    <p>Ein Taschenrechner ist eine tragbare, handliche elektronische Rechenmaschine, mit deren Hilfe numerische
-        Berechnungen ausgeführt werden können. Einige neuere technisch-wissenschaftliche Taschenrechner beherrschen auch
-        symbolische Mathematik mittels eines Computeralgebrasystems (CAS), können also etwa Gleichungen umstellen oder
-        lösen.</p>
-    <p>Praktisch alle heutigen Taschenrechner verwenden elektronische Integrierte Schaltungen und LC-Displays als
-        Anzeige und
-        werden von einer Batterie oder Solarzelle mit Strom versorgt.</p>
-    <figure id="merch-calc"><img src="../media/900px-SCM_Marchant_calculator.jpg" alt="Merchant Calculator">
-        <figcaption>By <a href="#">Bilby</a> - Own work, <a href="#">CC BY 3.0</a>
-            https://commons.wikimedia.org/w/index.php?curid=10980797
-        </figcaption>
-    </figure>
-    <h4>Geschichte</h4>
-    <p>Bereits vor der Einführung der elektronischen Taschenrechner gab es einen Bedarf nach
-        tragbaren Rechenhilfen. Dieser wurde mit mechanischen Taschenrechnern und
-        Rechenschiebern befriedigt. Meist handelte es sich dabei um einfache
-        Addiermaschinen. Auch Vier-Spezies-Maschinen – also Rechenmaschinen, die Addition,
-        Subtraktion, Multiplikation und Division beherrschten – gab es in taschentauglicher Größe.
-        Bekanntestes Beispiel ist die Curta.</p>
-    <p>Vorläufer der elektronischen Taschenrechner waren elektronische Tischrechner, bei
-        denen der Integrationsgrad der Schaltungstechnik noch geringer war und die deshalb
-        größere Dimensionen aufwiesen.</p>
-    <p>Der erste elektronische, tatsächlich handflächengroße Taschenrechner wurde 1967 von
-        Texas Instruments entwickelt.[1] Ein 1,5 kg schwerer Prototyp dieses ersten
-        Taschenrechners ist heute in der Smithsonian Institution ausgestellt. Auch dieser lief schon mit Batterien,
-        frühere Rechner
-        benötigten einen Stromanschluss. Die ersten kommerziell vertriebenen Taschenrechner wurden 1969 und 1970 von den
-        japanischen Firmen Compucorp, Sanyo, Sharp und Canon hergestellt. Intel entwickelte für die japanische Firma
-        Busicom
-        einen der ersten Mikroprozessoren, den Intel 4004, der 1971 auf den Markt kam und in dem Modell Busicom 141-PF
-        verwendet wurde. Als erster Taschenrechner, der mit einem Verkaufspreis von 10.000 Yen für die breite Masse
-        erschwinglich war, gilt der 1972 veröffentlichte Casio Mini.[2] 1972 brachte Texas Instruments den
-        Taschenrechner SR 10
-        mit dem eigenen Mikroprozessor TMS1000 heraus. Diese Taschenrechner verfügten über wenig mehr als die vier
-        Grundrechenarten. 1971 stellte Bowmar den ersten in den USA erhältlichen Taschenrechner her (Bowmar 901B/„Bowmar
-        Brain“, Maße: 131 mm ×77 mm × 37 mm). Er hatte vier Funktionen und ein achtstelliges rotes LED-Display. Verkauft
-        wurde
-        er für 240 US$. Bowmar musste 1976 schließen.</p>
+    <section>
+        <h2>Taschenrechner</h2>
+        <p>Ein Taschenrechner ist eine tragbare, handliche elektronische Rechenmaschine, mit deren Hilfe numerische
+            Berechnungen ausgeführt werden können. Einige neuere technisch-wissenschaftliche Taschenrechner beherrschen
+            auch
+            symbolische Mathematik mittels eines Computeralgebrasystems (<abbr>CAS</abbr>), können also etwa Gleichungen
+            umstellen oder
+            lösen.</p>
+        <p>Praktisch alle heutigen Taschenrechner verwenden elektronische Integrierte Schaltungen und <abbr>LC</abbr>-Displays
+            als
+            Anzeige und
+            werden von einer Batterie oder Solarzelle mit Strom versorgt.</p>
+        <figure id="merch-calc"><img src="../media/900px-SCM_Marchant_calculator.jpg" alt="Merchant Calculator">
+            <figcaption>By <a href="#">Bilby</a> - Own work, <a href="#">CC BY 3.0</a>
+                https://commons.wikimedia.org/w/index.php?curid=10980797
+            </figcaption>
+        </figure>
+        <h4>Geschichte</h4>
+        <p>Bereits vor der Einführung der elektronischen Taschenrechner gab es einen Bedarf nach
+            tragbaren Rechenhilfen. Dieser wurde mit mechanischen Taschenrechnern und
+            Rechenschiebern befriedigt. Meist handelte es sich dabei um einfache
+            Addiermaschinen. Auch Vier-Spezies-Maschinen – also Rechenmaschinen, die Addition,
+            Subtraktion, Multiplikation und Division beherrschten – gab es in taschentauglicher Größe.
+            Bekanntestes Beispiel ist die Curta.</p>
+        <p>Vorläufer der elektronischen Taschenrechner waren elektronische Tischrechner, bei
+            denen der Integrationsgrad der Schaltungstechnik noch geringer war und die deshalb
+            größere Dimensionen aufwiesen.</p>
+        <p>Der erste elektronische, tatsächlich handflächengroße Taschenrechner wurde
+            <time datetime="1967">1967</time>
+            von Texas Instruments entwickelt.[1] Ein 1,5 kg schwerer Prototyp dieses ersten
+            Taschenrechners ist heute in der Smithsonian Institution ausgestellt. Auch dieser lief schon mit Batterien,
+            frühere Rechner
+            benötigten einen Stromanschluss. Die ersten kommerziell vertriebenen Taschenrechner wurden
+            <time datetime="1969">1969</time>
+            und
+            <time datetime="1970">1970</time>
+            von den japanischen Firmen Compucorp, Sanyo, Sharp und Canon hergestellt. Intel entwickelte für die
+            japanische Firma
+            Busicom einen der ersten Mikroprozessoren, den Intel 4004, der
+            <time datetime="1971">1971</time>
+            auf den Markt kam und in dem Modell
+            Busicom
+            141-PF
+            verwendet wurde. Als erster Taschenrechner, der mit einem Verkaufspreis von 10.000 Yen für die breite
+            Masse
+            erschwinglich war, gilt der
+            <time datetime="1972">1972</time>
+            veröffentlichte Casio Mini.[2]
+            <time datetime="1972">1972</time>
+            brachte Texas Instruments den
+            Taschenrechner <abbr>SR</abbr> 10
+            mit dem eigenen Mikroprozessor <abbr>TMS</abbr>1000 heraus. Diese Taschenrechner verfügten über wenig mehr
+            als die
+            vier
+            Grundrechenarten.
+            <time datetime="1971">1971</time>
+            stellte Bowmar den ersten in den USA erhältlichen Taschenrechner her (Bowmar
+            901B
+            /„Bowmar
+            Brain“, Maße: 131 mm ×77 mm × 37 mm). Er hatte vier Funktionen und ein achtstelliges rotes <abbr>LED</abbr>-Display.
+            Verkauft
+            wurde
+            er für 240 US$. Bowmar musste
+            <time datetime="1976">1976</time>
+            schließen.
+        </p>
 
-    <p>Ende der damals noch weit verbreiteten Rechenschieber ein. Einer seiner Entwickler war Steve Wozniak, der wenige
-        Jahre
-        später das Unternehmen Apple mitgründete und als Computer-Ingenieur die Entwicklung des Personal Computer
-        maßgeblich beeinflusste.</p>
+        <p>Ende der damals noch weit verbreiteten Rechenschieber ein. Einer seiner Entwickler war Steve Wozniak, der
+            wenige
+            Jahre
+            später das Unternehmen Apple mitgründete und als Computer-Ingenieur die Entwicklung des Personal Computer
+            maßgeblich beeinflusste.</p>
 
-    <p>
-        Vor allem Hewlett Packard und Texas Instruments entwickelten ab 1974 auch programmierbare Taschenrechner.
-    </p>
-    <h4>Numerische Genauigkeit</h4>
-    <p>
-        Auch wenn heutige Taschenrechner im Regelfall kaum Programmfehler bei einfachen Berechnungen aufweisen, lassen
-        sich zwischen verschiedenen Taschenrechnermodellen unterschiedliche Genauigkeiten und Auflösungen bei
-        numerischen Berechnungen bestimmen. Die Gründe liegen in den numerischen Näherungsverfahren (beispielsweise
-        Horner-Schema und CORDIC), mit denen beispielsweise transzendente Funktionen wie die Sinus-Funktion berechnet
-        werden. Genauer gesagt kommt es auf die Anzahl der abgespeicherten Koeffizienten für die
-        Funktionsapproximationen
-        an: der dafür benötigte Speicherplatz war vor allem in der Anfangszeit ein extremer Engpass. Diese kleinen
-        Unterschiede
-        in den Verfahren und unterschiedliche Genauigkeiten lassen sich auch als Erkennungsmerkmal für eine bestimmte
-        Firmware verwenden.
-    </p>
-    <p>
-        Beispielsweise liefert die numerische Berechnung von sin (22) in Radiant auf verschiedenen Taschenrechnern
-        voneinander
-        abweichende Ergebnisse.
-    </p>
-    <sup>Source Wikipedia: <a
-            href="https://de.wikipedia.org/wiki/Taschenrechner">de.wikipedia.org/wiki/Taschenrechner</a></sup>
+        <p>
+            Vor allem Hewlett Packard und Texas Instruments entwickelten ab 1974 auch programmierbare Taschenrechner.
+        </p>
+        <h4>Numerische Genauigkeit</h4>
+        <p>
+            Auch wenn heutige Taschenrechner im Regelfall kaum Programmfehler bei einfachen Berechnungen aufweisen,
+            lassen
+            sich zwischen verschiedenen Taschenrechnermodellen unterschiedliche Genauigkeiten und Auflösungen bei
+            numerischen Berechnungen bestimmen. Die Gründe liegen in den numerischen Näherungsverfahren (beispielsweise
+            Horner-Schema und CORDIC), mit denen beispielsweise transzendente Funktionen wie die Sinus-Funktion
+            berechnet
+            werden. Genauer gesagt kommt es auf die Anzahl der abgespeicherten Koeffizienten für die
+            Funktionsapproximationen
+            an: der dafür benötigte Speicherplatz war vor allem in der Anfangszeit ein extremer Engpass. Diese kleinen
+            Unterschiede
+            in den Verfahren und unterschiedliche Genauigkeiten lassen sich auch als Erkennungsmerkmal für eine
+            bestimmte
+            Firmware verwenden.
+        </p>
+        <p>
+            Beispielsweise liefert die numerische Berechnung von sin (22) in Radiant auf verschiedenen Taschenrechnern
+            voneinander
+            abweichende Ergebnisse.
+        </p>
+        <sup>Source Wikipedia: <a
+                href="https://de.wikipedia.org/wiki/Taschenrechner">de.wikipedia.org/wiki/Taschenrechner</a></sup>
+    </section>
+    <section>
+        <h2>Demonstration</h2>
+        <figure>
+            <iframe id="calculator" src="calculator/index.html"></iframe>
+            <figcaption>Casino Mini von 1972</figcaption>
+        </figure>
 
-    <h2>Demonstration</h2>
-    <figure>
-        <iframe id="calculator" src="calculator/index.html"></iframe>
-        <figcaption>Casino Mini von 1972</figcaption>
-    </figure>
-
-    <h4>Bedienung des TI-Nspire CX CAS</h4>
-    <figure>
-        <video controls>
-            <source src="../media/TI-Nspire CX CAS 3D Model.mp4"  type="video/mp4">
-            <track src="../media/ti-nspire-subtitles.en.vtt" kind="subtitles" srclang="en" label="English">
-        </video>
-        <figcaption>TI-Nspire CX CAS Demonstration</figcaption>
-    </figure>
-    <sup>Von TheConnerdy, <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.de">CC BY-SA 3.0,</a> <a
-            href="https://www.youtube.com">via YouTube</a></sup>
-    <div class="last-edited">
-        <p>Zuletzt geändert von Philipp Graf </p>
-        <time datetime="2016-02-11 12:45">Donnerstag, 11. Februar 2016, 12:45</time>
-    </div>
-
-    <h2>Taschenrechervarianten</h2>
-    <figure>
-        <dl>
-            <dt>Einfach</dt>
-            <dd>Grundrechenarten,Prozentrechnung</dd>
-            <dt>Finanzwirtschaft</dt>
-            <dd>Zinsrechnung,...</dd>
-            <dd>zum Beispiel der "Klassiker" HP-12C (hergestellt seit 1981, HP 17 B (II) (hergestellt seit 1988)</dd>
-            <dt>Boolesche Rechnungen</dt>
-            <dd>Rechnen mit Dual-, Oktal- und Hexadezimalzahlen, z.B. TI Programmer)</dd>
-            <dt>Wissenschaftlich</dt>
-            <dd>Winkelfunktionen, Logarithmus, mathematische Statistik, ...</dd>
-            <dd>zum Beispiel TI-30 (seit 1976 dieselbe Typbezeichnung für intern völlig unterschiedliche Geräte</dd>
-            <dt>Programmierbarer Taschenrechner</dt>
-            <dt>Grafikfähiger Taschenrechner</dt>
-            <dd>Funktions-/Kurvendarstellung</dd>
-            <dd>ab 1985 Geräte von Casio (fx-Serie, aktuelles Modell fx 9860G SD)</dd>
-            <dd>1989 bis heute die HP-48-49-Reihe</dd>
-            <dd>ab 1993 der TI-82 und seine Nachfolger</dd>
-            <dd>aktuell der TI-84 Plus und TI-Nspire</dd>
-            <dd>Grafikrechner sind typischerweise auch programmierbar.</dd>
-            <dt>Computeralgebra-Rechner</dt>
-            <dd>grafikfähige Taschenrechner mit eingebautem Computeralgebra-Kern</dd>
-            <dd>erstes verbreitetes Gerät war der HP-48 von Hewlett-Packard (ab 1989), spätere Geräte zum Beispiel
-                TI-92(+)
-                (ab 1995),
-                TI-89 (ab 1998) und Voyage 200 (ab 2002), TI-Nspire CAS (ab 2007) von Texas Instruments, ClassPad 300
-                von
-                Casio, HP
-                49g+ von Hewlett-Packard.
-            </dd>
-        </dl>
-        <figcaption>Taschenrechnervarianten, Source Wikipedia:
-            <a href="https://de.wikipedia.org/wiki/Taschenrechner">https://de.wikipedia.org/wiki/Taschenrechner</a>
-        </figcaption>
-    </figure>
-    <div class="last-edited">
-        <p>Zuletzt geändert von Gabriela Kant</p>
-        <time datetime="2016-02-11 10:09">Donnerstag, 11. Februar 2016, 10:09</time>
-    </div>
-    <h2>Zeitgewinn</h2>
-    <table>
-        <thead>Zeitgewinn durch Benutzung eines Taschenrechners</thead>
-        <tr>
-            <th></th>
-            <th>2-Stellen</th>
-            <th>3-Stellen</th>
-            <th>4-Stellen</th>
-        </tr>
-        <tr>
-            <td>Addition / Subtraktion</td>
-            <td>4</td>
-            <td>8</td>
-            <td>20</td>
-        </tr>
-        <tr>
-            <td>Multiplikation</td>
-            <td rowspan="2">15</td>
-            <td rowspan="2">45</td>
-            <td>240</td>
-        </tr>
-        <tr>
-            <td>Division</td>
-            <td>210</td>
-        </tr>
-        <tr>
-            <td>Modulo</td>
-            <td>5</td>
-            <td>20</td>
-            <td>65</td>
-        </tr>
-        <tr>
-            <td>Quersumme</td>
-            <td colspan="2">1</td>
-            <td>2</td>
-        </tr>
-        <tr>
-            <td>Wurzelziehen</td>
-            <td colspan="3">Kaum machbar von Hand</td>
-        </tr>
-        <tr>
-            <td>Potenzieren</td>
-            <td>25</td>
-            <td>75</td>
-            <td>550</td>
-        </tr>
-    </table>
-    <img id="zeitgewinn" src="../media/zeitgewinn.svg">
-    <div class="last-edited">
-        <p>Zuletzt geändert von Leandra Gross</p>
-        <time datetime="2016-02-29 13:02">Freitag, 29. Februar 2016, 13:02</time>
-    </div>
-    <h2>iPhone calculator tricks</h2>
-    <figure>
-        <iframe id="iphone-tricks" src="https://www.youtube.com/embed/a7rcVgb41-0" frameborder="0">
-        </iframe>
-        <figcaption>iPhone Calculator Tricks on YouTube:
-            <a href="https://www.youtube.com/watch?v=a7rcVgb41-0">youtube.com/watch?v=a7rcVgb41-0</a>
-        </figcaption>
-    </figure>
-    <div class="last-edited">
-        <p>Zuletzt geändert von Paul Sarner</p>
-        <time datetime="2016-02-10 18:38">Donnerstag, 10. Februar 2016, 18:38</time>
-    </div>
-    <h2>Die besten und schlechtesten Taschenrechner</h2>
-    <p>In einer 2014 durchgeführten Benutzerbefragung schnitten die Modelle von Casino am Besten ab:</p>
-    <ol>
-        <li>Casino UX5</li>
-        <li>Casino TZZ</li>
-        <li>Casino Basic</li>
-    </ol>
-    <p>Am schlechtesten schnitten die Geräte von HG ab:</p>
-    <ol start="78">
-        <li>HG Productive</li>
-        <li>HG Calc++</li>
-        <li>HG GO-ON</li>
-    </ol>
-    <div class="last-edited">
-        <p>Zuletz geändert von Petra Summer</p>
-        <time datetime="2019-02-11">Donnerstag, 11. Februar 2016, 14:13</time>
-    </div>
-
-    <h2><a id="search"></a>Taschenrechner suchen nach Modell</h2>
-    <form action="index.html#search" method="get">
-        <input type="text" name="calc-search" value="">
-        <button id="search-btn" type="submit">Search</button>
-    </form>
-    <form>
-        <fieldset class="author">
-            <legend>Autor</legend>
-            <label for="mr">Herr</label>
-            <input type="radio" id="mr" name="sex"><br>
-            <label for="mrs">Frau</label>
-            <input type="radio" id="mrs" name="sex">
-            <label for="name">Name</label>
-            <input type="text" id="name">
-            <label for="email">E-Mail</label>
-            <input type="email" id="email">
-            <label for="website">Webseite</label>
-            <input type="url" id="website">
-            <label for="dob">Geburtsdatum</label>
-            <input type="date" id="dob">
-            <label for="nationality">Nationalität</label>
-            <select name="nationality" id="nationality">
-                <option value="">-- Wählen --</option>
-                <option value="afghan">Afghan</option>
-                <option value="albanian">Albanian</option>
-                <option value="algerian">Algerian</option>
-                <option value="american">American</option>
-                <option value="andorran">Andorran</option>
-                <option value="angolan">Angolan</option>
-                <option value="antiguans">Antiguans</option>
-                <option value="argentinean">Argentinean</option>
-                <option value="armenian">Armenian</option>
-                <option value="australian">Australian</option>
-                <option value="austrian">Austrian</option>
-                <option value="azerbaijani">Azerbaijani</option>
-                <option value="bahamian">Bahamian</option>
-                <option value="bahraini">Bahraini</option>
-                <option value="bangladeshi">Bangladeshi</option>
-                <option value="barbadian">Barbadian</option>
-                <option value="barbudans">Barbudans</option>
-                <option value="batswana">Batswana</option>
-                <option value="belarusian">Belarusian</option>
-                <option value="belgian">Belgian</option>
-                <option value="belizean">Belizean</option>
-                <option value="beninese">Beninese</option>
-                <option value="bhutanese">Bhutanese</option>
-                <option value="bolivian">Bolivian</option>
-                <option value="bosnian">Bosnian</option>
-                <option value="brazilian">Brazilian</option>
-                <option value="british">British</option>
-                <option value="bruneian">Bruneian</option>
-                <option value="bulgarian">Bulgarian</option>
-                <option value="burkinabe">Burkinabe</option>
-                <option value="burmese">Burmese</option>
-                <option value="burundian">Burundian</option>
-                <option value="cambodian">Cambodian</option>
-                <option value="cameroonian">Cameroonian</option>
-                <option value="canadian">Canadian</option>
-                <option value="cape verdean">Cape Verdean</option>
-                <option value="central african">Central African</option>
-                <option value="chadian">Chadian</option>
-                <option value="chilean">Chilean</option>
-                <option value="chinese">Chinese</option>
-                <option value="colombian">Colombian</option>
-                <option value="comoran">Comoran</option>
-                <option value="congolese">Congolese</option>
-                <option value="costa rican">Costa Rican</option>
-                <option value="croatian">Croatian</option>
-                <option value="cuban">Cuban</option>
-                <option value="cypriot">Cypriot</option>
-                <option value="czech">Czech</option>
-                <option value="danish">Danish</option>
-                <option value="djibouti">Djibouti</option>
-                <option value="dominican">Dominican</option>
-                <option value="dutch">Dutch</option>
-                <option value="east timorese">East Timorese</option>
-                <option value="ecuadorean">Ecuadorean</option>
-                <option value="egyptian">Egyptian</option>
-                <option value="emirian">Emirian</option>
-                <option value="equatorial guinean">Equatorial Guinean</option>
-                <option value="eritrean">Eritrean</option>
-                <option value="estonian">Estonian</option>
-                <option value="ethiopian">Ethiopian</option>
-                <option value="fijian">Fijian</option>
-                <option value="filipino">Filipino</option>
-                <option value="finnish">Finnish</option>
-                <option value="french">French</option>
-                <option value="gabonese">Gabonese</option>
-                <option value="gambian">Gambian</option>
-                <option value="georgian">Georgian</option>
-                <option value="german">German</option>
-                <option value="ghanaian">Ghanaian</option>
-                <option value="greek">Greek</option>
-                <option value="grenadian">Grenadian</option>
-                <option value="guatemalan">Guatemalan</option>
-                <option value="guinea-bissauan">Guinea-Bissauan</option>
-                <option value="guinean">Guinean</option>
-                <option value="guyanese">Guyanese</option>
-                <option value="haitian">Haitian</option>
-                <option value="herzegovinian">Herzegovinian</option>
-                <option value="honduran">Honduran</option>
-                <option value="hungarian">Hungarian</option>
-                <option value="icelander">Icelander</option>
-                <option value="indian">Indian</option>
-                <option value="indonesian">Indonesian</option>
-                <option value="iranian">Iranian</option>
-                <option value="iraqi">Iraqi</option>
-                <option value="irish">Irish</option>
-                <option value="israeli">Israeli</option>
-                <option value="italian">Italian</option>
-                <option value="ivorian">Ivorian</option>
-                <option value="jamaican">Jamaican</option>
-                <option value="japanese">Japanese</option>
-                <option value="jordanian">Jordanian</option>
-                <option value="kazakhstani">Kazakhstani</option>
-                <option value="kenyan">Kenyan</option>
-                <option value="kittian and nevisian">Kittian and Nevisian</option>
-                <option value="kuwaiti">Kuwaiti</option>
-                <option value="kyrgyz">Kyrgyz</option>
-                <option value="laotian">Laotian</option>
-                <option value="latvian">Latvian</option>
-                <option value="lebanese">Lebanese</option>
-                <option value="liberian">Liberian</option>
-                <option value="libyan">Libyan</option>
-                <option value="liechtensteiner">Liechtensteiner</option>
-                <option value="lithuanian">Lithuanian</option>
-                <option value="luxembourger">Luxembourger</option>
-                <option value="macedonian">Macedonian</option>
-                <option value="malagasy">Malagasy</option>
-                <option value="malawian">Malawian</option>
-                <option value="malaysian">Malaysian</option>
-                <option value="maldivan">Maldivan</option>
-                <option value="malian">Malian</option>
-                <option value="maltese">Maltese</option>
-                <option value="marshallese">Marshallese</option>
-                <option value="mauritanian">Mauritanian</option>
-                <option value="mauritian">Mauritian</option>
-                <option value="mexican">Mexican</option>
-                <option value="micronesian">Micronesian</option>
-                <option value="moldovan">Moldovan</option>
-                <option value="monacan">Monacan</option>
-                <option value="mongolian">Mongolian</option>
-                <option value="moroccan">Moroccan</option>
-                <option value="mosotho">Mosotho</option>
-                <option value="motswana">Motswana</option>
-                <option value="mozambican">Mozambican</option>
-                <option value="namibian">Namibian</option>
-                <option value="nauruan">Nauruan</option>
-                <option value="nepalese">Nepalese</option>
-                <option value="new zealander">New Zealander</option>
-                <option value="ni-vanuatu">Ni-Vanuatu</option>
-                <option value="nicaraguan">Nicaraguan</option>
-                <option value="nigerien">Nigerien</option>
-                <option value="north korean">North Korean</option>
-                <option value="northern irish">Northern Irish</option>
-                <option value="norwegian">Norwegian</option>
-                <option value="omani">Omani</option>
-                <option value="pakistani">Pakistani</option>
-                <option value="palauan">Palauan</option>
-                <option value="panamanian">Panamanian</option>
-                <option value="papua new guinean">Papua New Guinean</option>
-                <option value="paraguayan">Paraguayan</option>
-                <option value="peruvian">Peruvian</option>
-                <option value="polish">Polish</option>
-                <option value="portuguese">Portuguese</option>
-                <option value="qatari">Qatari</option>
-                <option value="romanian">Romanian</option>
-                <option value="russian">Russian</option>
-                <option value="rwandan">Rwandan</option>
-                <option value="saint lucian">Saint Lucian</option>
-                <option value="salvadoran">Salvadoran</option>
-                <option value="samoan">Samoan</option>
-                <option value="san marinese">San Marinese</option>
-                <option value="sao tomean">Sao Tomean</option>
-                <option value="saudi">Saudi</option>
-                <option value="scottish">Scottish</option>
-                <option value="senegalese">Senegalese</option>
-                <option value="serbian">Serbian</option>
-                <option value="seychellois">Seychellois</option>
-                <option value="sierra leonean">Sierra Leonean</option>
-                <option value="singaporean">Singaporean</option>
-                <option value="slovakian">Slovakian</option>
-                <option value="slovenian">Slovenian</option>
-                <option value="solomon islander">Solomon Islander</option>
-                <option value="somali">Somali</option>
-                <option value="south african">South African</option>
-                <option value="south korean">South Korean</option>
-                <option value="spanish">Spanish</option>
-                <option value="sri lankan">Sri Lankan</option>
-                <option value="sudanese">Sudanese</option>
-                <option value="surinamer">Surinamer</option>
-                <option value="swazi">Swazi</option>
-                <option value="swedish">Swedish</option>
-                <option value="swiss">Swiss</option>
-                <option value="syrian">Syrian</option>
-                <option value="taiwanese">Taiwanese</option>
-                <option value="tajik">Tajik</option>
-                <option value="tanzanian">Tanzanian</option>
-                <option value="thai">Thai</option>
-                <option value="togolese">Togolese</option>
-                <option value="tongan">Tongan</option>
-                <option value="trinidadian or tobagonian">Trinidadian or Tobagonian</option>
-                <option value="tunisian">Tunisian</option>
-                <option value="turkish">Turkish</option>
-                <option value="tuvaluan">Tuvaluan</option>
-                <option value="ugandan">Ugandan</option>
-                <option value="ukrainian">Ukrainian</option>
-                <option value="uruguayan">Uruguayan</option>
-                <option value="uzbekistani">Uzbekistani</option>
-                <option value="venezuelan">Venezuelan</option>
-                <option value="vietnamese">Vietnamese</option>
-                <option value="welsh">Welsh</option>
-                <option value="yemenite">Yemenite</option>
-                <option value="zambian">Zambian</option>
-                <option value="zimbabwean">Zimbabwean</option>
-            </select>
-            <label for="profiltext">Profiltext</label>
-            <textarea id="profiltext"></textarea>
-            <label for="profile-pic">Profilbilder</label>
-            <input type="file" id="profile-pic">
-        </fieldset>
-        <fieldset class="legal">
-            <legend>Rechtliches</legend>
-            <input type="checkbox" id="a"><label for="a">Ich bestätige, das ich der Urheber des Textes bin.</label>
-            <input type="checkbox" id="b"><label for="b">Ich bestätige, das ich der Urheber aller eingereichter Bilder bin.</label>
-            <input type="checkbox" id="c"><label for="c">Ich bestätige, das der Text nach bestem Treu und glauben der Wahrheit</label>
-            entspricht und
-            die Bilder nciht manipuliert wurden.
-        </fieldset>
-        <button>Account anlegen</button>
-        <button>Eingaben zurücksetzen</button>
-    </form>
-
+        <h2>Bedienung des TI-Nspire CX CAS</h2>
+        <figure>
+            <video controls>
+                <source src="../media/TI-Nspire CX CAS 3D Model.mp4" type="video/mp4">
+                <track src="../media/ti-nspire-subtitles.en.vtt" kind="subtitles" srclang="en" label="English">
+            </video>
+            <figcaption>TI-Nspire CX CAS Demonstration</figcaption>
+        </figure>
+        <sup>Von TheConnerdy, <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.de">CC BY-SA 3.0,</a> <a
+                href="https://www.youtube.com">via YouTube</a></sup>
+        <div class="last-edited">
+            <p>Zuletzt geändert von Philipp Graf </p>
+            <time datetime="2016-02-11 12:45">Donnerstag, 11. Februar 2016, 12:45</time>
+        </div>
+    </section>
+    <section>
+        <h2>Taschenrechervarianten</h2>
+        <figure>
+            <dl>
+                <dt>Einfach</dt>
+                <dd>Grundrechenarten,Prozentrechnung</dd>
+                <dt>Finanzwirtschaft</dt>
+                <dd>Zinsrechnung,...</dd>
+                <dd>zum Beispiel der "Klassiker" HP-12C (hergestellt seit 1981, HP 17 B (II) (hergestellt seit 1988)
+                </dd>
+                <dt>Boolesche Rechnungen</dt>
+                <dd>Rechnen mit Dual-, Oktal- und Hexadezimalzahlen, z.B. TI Programmer)</dd>
+                <dt>Wissenschaftlich</dt>
+                <dd>Winkelfunktionen, Logarithmus, mathematische Statistik, ...</dd>
+                <dd>zum Beispiel TI-30 (seit 1976 dieselbe Typbezeichnung für intern völlig unterschiedliche Geräte</dd>
+                <dt>Programmierbarer Taschenrechner</dt>
+                <dt>Grafikfähiger Taschenrechner</dt>
+                <dd>Funktions-/Kurvendarstellung</dd>
+                <dd>ab 1985 Geräte von Casio (fx-Serie, aktuelles Modell fx 9860G SD)</dd>
+                <dd>1989 bis heute die HP-48-49-Reihe</dd>
+                <dd>ab 1993 der TI-82 und seine Nachfolger</dd>
+                <dd>aktuell der TI-84 Plus und TI-Nspire</dd>
+                <dd>Grafikrechner sind typischerweise auch programmierbar.</dd>
+                <dt>Computeralgebra-Rechner</dt>
+                <dd>grafikfähige Taschenrechner mit eingebautem Computeralgebra-Kern</dd>
+                <dd>erstes verbreitetes Gerät war der HP-48 von Hewlett-Packard (ab 1989), spätere Geräte zum Beispiel
+                    TI-92(+)
+                    (ab 1995),
+                    TI-89 (ab 1998) und Voyage 200 (ab 2002), TI-Nspire CAS (ab 2007) von Texas Instruments, ClassPad
+                    300
+                    von
+                    Casio, HP
+                    49g+ von Hewlett-Packard.
+                </dd>
+            </dl>
+            <figcaption>Taschenrechnervarianten, Source Wikipedia:
+                <a href="https://de.wikipedia.org/wiki/Taschenrechner">https://de.wikipedia.org/wiki/Taschenrechner</a>
+            </figcaption>
+        </figure>
+        <div class="last-edited">
+            <p>Zuletzt geändert von Gabriela Kant</p>
+            <time datetime="2016-02-11 10:09">Donnerstag, 11. Februar 2016, 10:09</time>
+        </div>
+    </section>
+    <section>
+        <h2>Zeitgewinn</h2>
+        <table>
+            <thead>Zeitgewinn durch Benutzung eines Taschenrechners</thead>
+            <tr>
+                <th></th>
+                <th>2-Stellen</th>
+                <th>3-Stellen</th>
+                <th>4-Stellen</th>
+            </tr>
+            <tr>
+                <td>Addition / Subtraktion</td>
+                <td>4</td>
+                <td>8</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Multiplikation</td>
+                <td rowspan="2">15</td>
+                <td rowspan="2">45</td>
+                <td>240</td>
+            </tr>
+            <tr>
+                <td>Division</td>
+                <td>210</td>
+            </tr>
+            <tr>
+                <td>Modulo</td>
+                <td>5</td>
+                <td>20</td>
+                <td>65</td>
+            </tr>
+            <tr>
+                <td>Quersumme</td>
+                <td colspan="2">1</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Wurzelziehen</td>
+                <td colspan="3">Kaum machbar von Hand</td>
+            </tr>
+            <tr>
+                <td>Potenzieren</td>
+                <td>25</td>
+                <td>75</td>
+                <td>550</td>
+            </tr>
+        </table>
+        <img id="zeitgewinn" src="../media/zeitgewinn.svg">
+        <div class="last-edited">
+            <p>Zuletzt geändert von Leandra Gross</p>
+            <time datetime="2016-02-29 13:02">Freitag, 29. Februar 2016, 13:02</time>
+        </div>
+    </section>
+    <section>
+        <h2>iPhone calculator tricks</h2>
+        <figure>
+            <iframe id="iphone-tricks" src="https://www.youtube.com/embed/a7rcVgb41-0" frameborder="0">
+            </iframe>
+            <figcaption>iPhone Calculator Tricks on YouTube:
+                <a href="https://www.youtube.com/watch?v=a7rcVgb41-0">youtube.com/watch?v=a7rcVgb41-0</a>
+            </figcaption>
+        </figure>
+        <div class="last-edited">
+            <p>Zuletzt geändert von Paul Sarner</p>
+            <time datetime="2016-02-10 18:38">Donnerstag, 10. Februar 2016, 18:38</time>
+        </div>
+        <h2>Die besten und schlechtesten Taschenrechner</h2>
+        <p>In einer 2014 durchgeführten Benutzerbefragung schnitten die Modelle von Casino am Besten ab:</p>
+        <ol>
+            <li>Casino UX5</li>
+            <li>Casino TZZ</li>
+            <li>Casino Basic</li>
+        </ol>
+        <p>Am schlechtesten schnitten die Geräte von HG ab:</p>
+        <ol start="78">
+            <li>HG Productive</li>
+            <li>HG Calc++</li>
+            <li>HG GO-ON</li>
+        </ol>
+        <div class="last-edited">
+            <p>Zuletz geändert von Petra Summer</p>
+            <time datetime="2019-02-11">Donnerstag, 11. Februar 2016, 14:13</time>
+        </div>
+    </section>
+    <section>
+        <h2><a id="search"></a>Taschenrechner suchen nach Modell</h2>
+        <form action="index.html#search" method="get">
+            <input type="text" name="calc-search" value="">
+            <button id="search-btn" type="submit">Search</button>
+        </form>
+        <form>
+            <fieldset class="author">
+                <legend>Autor</legend>
+                <label for="mr">Herr</label>
+                <input type="radio" id="mr" name="sex"><br>
+                <label for="mrs">Frau</label>
+                <input type="radio" id="mrs" name="sex">
+                <label for="name">Name</label>
+                <input type="text" id="name">
+                <label for="email">E-Mail</label>
+                <input type="email" id="email">
+                <label for="website">Webseite</label>
+                <input type="url" id="website">
+                <label for="dob">Geburtsdatum</label>
+                <input type="date" id="dob">
+                <label for="nationality">Nationalität</label>
+                <select name="nationality" id="nationality">
+                    <option value="">-- Wählen --</option>
+                    <option value="afghan">Afghan</option>
+                    <option value="albanian">Albanian</option>
+                    <option value="algerian">Algerian</option>
+                    <option value="american">American</option>
+                    <option value="andorran">Andorran</option>
+                    <option value="angolan">Angolan</option>
+                    <option value="antiguans">Antiguans</option>
+                    <option value="argentinean">Argentinean</option>
+                    <option value="armenian">Armenian</option>
+                    <option value="australian">Australian</option>
+                    <option value="austrian">Austrian</option>
+                    <option value="azerbaijani">Azerbaijani</option>
+                    <option value="bahamian">Bahamian</option>
+                    <option value="bahraini">Bahraini</option>
+                    <option value="bangladeshi">Bangladeshi</option>
+                    <option value="barbadian">Barbadian</option>
+                    <option value="barbudans">Barbudans</option>
+                    <option value="batswana">Batswana</option>
+                    <option value="belarusian">Belarusian</option>
+                    <option value="belgian">Belgian</option>
+                    <option value="belizean">Belizean</option>
+                    <option value="beninese">Beninese</option>
+                    <option value="bhutanese">Bhutanese</option>
+                    <option value="bolivian">Bolivian</option>
+                    <option value="bosnian">Bosnian</option>
+                    <option value="brazilian">Brazilian</option>
+                    <option value="british">British</option>
+                    <option value="bruneian">Bruneian</option>
+                    <option value="bulgarian">Bulgarian</option>
+                    <option value="burkinabe">Burkinabe</option>
+                    <option value="burmese">Burmese</option>
+                    <option value="burundian">Burundian</option>
+                    <option value="cambodian">Cambodian</option>
+                    <option value="cameroonian">Cameroonian</option>
+                    <option value="canadian">Canadian</option>
+                    <option value="cape verdean">Cape Verdean</option>
+                    <option value="central african">Central African</option>
+                    <option value="chadian">Chadian</option>
+                    <option value="chilean">Chilean</option>
+                    <option value="chinese">Chinese</option>
+                    <option value="colombian">Colombian</option>
+                    <option value="comoran">Comoran</option>
+                    <option value="congolese">Congolese</option>
+                    <option value="costa rican">Costa Rican</option>
+                    <option value="croatian">Croatian</option>
+                    <option value="cuban">Cuban</option>
+                    <option value="cypriot">Cypriot</option>
+                    <option value="czech">Czech</option>
+                    <option value="danish">Danish</option>
+                    <option value="djibouti">Djibouti</option>
+                    <option value="dominican">Dominican</option>
+                    <option value="dutch">Dutch</option>
+                    <option value="east timorese">East Timorese</option>
+                    <option value="ecuadorean">Ecuadorean</option>
+                    <option value="egyptian">Egyptian</option>
+                    <option value="emirian">Emirian</option>
+                    <option value="equatorial guinean">Equatorial Guinean</option>
+                    <option value="eritrean">Eritrean</option>
+                    <option value="estonian">Estonian</option>
+                    <option value="ethiopian">Ethiopian</option>
+                    <option value="fijian">Fijian</option>
+                    <option value="filipino">Filipino</option>
+                    <option value="finnish">Finnish</option>
+                    <option value="french">French</option>
+                    <option value="gabonese">Gabonese</option>
+                    <option value="gambian">Gambian</option>
+                    <option value="georgian">Georgian</option>
+                    <option value="german">German</option>
+                    <option value="ghanaian">Ghanaian</option>
+                    <option value="greek">Greek</option>
+                    <option value="grenadian">Grenadian</option>
+                    <option value="guatemalan">Guatemalan</option>
+                    <option value="guinea-bissauan">Guinea-Bissauan</option>
+                    <option value="guinean">Guinean</option>
+                    <option value="guyanese">Guyanese</option>
+                    <option value="haitian">Haitian</option>
+                    <option value="herzegovinian">Herzegovinian</option>
+                    <option value="honduran">Honduran</option>
+                    <option value="hungarian">Hungarian</option>
+                    <option value="icelander">Icelander</option>
+                    <option value="indian">Indian</option>
+                    <option value="indonesian">Indonesian</option>
+                    <option value="iranian">Iranian</option>
+                    <option value="iraqi">Iraqi</option>
+                    <option value="irish">Irish</option>
+                    <option value="israeli">Israeli</option>
+                    <option value="italian">Italian</option>
+                    <option value="ivorian">Ivorian</option>
+                    <option value="jamaican">Jamaican</option>
+                    <option value="japanese">Japanese</option>
+                    <option value="jordanian">Jordanian</option>
+                    <option value="kazakhstani">Kazakhstani</option>
+                    <option value="kenyan">Kenyan</option>
+                    <option value="kittian and nevisian">Kittian and Nevisian</option>
+                    <option value="kuwaiti">Kuwaiti</option>
+                    <option value="kyrgyz">Kyrgyz</option>
+                    <option value="laotian">Laotian</option>
+                    <option value="latvian">Latvian</option>
+                    <option value="lebanese">Lebanese</option>
+                    <option value="liberian">Liberian</option>
+                    <option value="libyan">Libyan</option>
+                    <option value="liechtensteiner">Liechtensteiner</option>
+                    <option value="lithuanian">Lithuanian</option>
+                    <option value="luxembourger">Luxembourger</option>
+                    <option value="macedonian">Macedonian</option>
+                    <option value="malagasy">Malagasy</option>
+                    <option value="malawian">Malawian</option>
+                    <option value="malaysian">Malaysian</option>
+                    <option value="maldivan">Maldivan</option>
+                    <option value="malian">Malian</option>
+                    <option value="maltese">Maltese</option>
+                    <option value="marshallese">Marshallese</option>
+                    <option value="mauritanian">Mauritanian</option>
+                    <option value="mauritian">Mauritian</option>
+                    <option value="mexican">Mexican</option>
+                    <option value="micronesian">Micronesian</option>
+                    <option value="moldovan">Moldovan</option>
+                    <option value="monacan">Monacan</option>
+                    <option value="mongolian">Mongolian</option>
+                    <option value="moroccan">Moroccan</option>
+                    <option value="mosotho">Mosotho</option>
+                    <option value="motswana">Motswana</option>
+                    <option value="mozambican">Mozambican</option>
+                    <option value="namibian">Namibian</option>
+                    <option value="nauruan">Nauruan</option>
+                    <option value="nepalese">Nepalese</option>
+                    <option value="new zealander">New Zealander</option>
+                    <option value="ni-vanuatu">Ni-Vanuatu</option>
+                    <option value="nicaraguan">Nicaraguan</option>
+                    <option value="nigerien">Nigerien</option>
+                    <option value="north korean">North Korean</option>
+                    <option value="northern irish">Northern Irish</option>
+                    <option value="norwegian">Norwegian</option>
+                    <option value="omani">Omani</option>
+                    <option value="pakistani">Pakistani</option>
+                    <option value="palauan">Palauan</option>
+                    <option value="panamanian">Panamanian</option>
+                    <option value="papua new guinean">Papua New Guinean</option>
+                    <option value="paraguayan">Paraguayan</option>
+                    <option value="peruvian">Peruvian</option>
+                    <option value="polish">Polish</option>
+                    <option value="portuguese">Portuguese</option>
+                    <option value="qatari">Qatari</option>
+                    <option value="romanian">Romanian</option>
+                    <option value="russian">Russian</option>
+                    <option value="rwandan">Rwandan</option>
+                    <option value="saint lucian">Saint Lucian</option>
+                    <option value="salvadoran">Salvadoran</option>
+                    <option value="samoan">Samoan</option>
+                    <option value="san marinese">San Marinese</option>
+                    <option value="sao tomean">Sao Tomean</option>
+                    <option value="saudi">Saudi</option>
+                    <option value="scottish">Scottish</option>
+                    <option value="senegalese">Senegalese</option>
+                    <option value="serbian">Serbian</option>
+                    <option value="seychellois">Seychellois</option>
+                    <option value="sierra leonean">Sierra Leonean</option>
+                    <option value="singaporean">Singaporean</option>
+                    <option value="slovakian">Slovakian</option>
+                    <option value="slovenian">Slovenian</option>
+                    <option value="solomon islander">Solomon Islander</option>
+                    <option value="somali">Somali</option>
+                    <option value="south african">South African</option>
+                    <option value="south korean">South Korean</option>
+                    <option value="spanish">Spanish</option>
+                    <option value="sri lankan">Sri Lankan</option>
+                    <option value="sudanese">Sudanese</option>
+                    <option value="surinamer">Surinamer</option>
+                    <option value="swazi">Swazi</option>
+                    <option value="swedish">Swedish</option>
+                    <option value="swiss">Swiss</option>
+                    <option value="syrian">Syrian</option>
+                    <option value="taiwanese">Taiwanese</option>
+                    <option value="tajik">Tajik</option>
+                    <option value="tanzanian">Tanzanian</option>
+                    <option value="thai">Thai</option>
+                    <option value="togolese">Togolese</option>
+                    <option value="tongan">Tongan</option>
+                    <option value="trinidadian or tobagonian">Trinidadian or Tobagonian</option>
+                    <option value="tunisian">Tunisian</option>
+                    <option value="turkish">Turkish</option>
+                    <option value="tuvaluan">Tuvaluan</option>
+                    <option value="ugandan">Ugandan</option>
+                    <option value="ukrainian">Ukrainian</option>
+                    <option value="uruguayan">Uruguayan</option>
+                    <option value="uzbekistani">Uzbekistani</option>
+                    <option value="venezuelan">Venezuelan</option>
+                    <option value="vietnamese">Vietnamese</option>
+                    <option value="welsh">Welsh</option>
+                    <option value="yemenite">Yemenite</option>
+                    <option value="zambian">Zambian</option>
+                    <option value="zimbabwean">Zimbabwean</option>
+                </select>
+                <label for="profiltext">Profiltext</label>
+                <textarea id="profiltext"></textarea>
+                <label for="profile-pic">Profilbilder</label>
+                <input type="file" id="profile-pic">
+            </fieldset>
+            <fieldset class="legal">
+                <legend>Rechtliches</legend>
+                <input type="checkbox" id="a"><label for="a">Ich bestätige, das ich der Urheber des Textes bin.</label>
+                <input type="checkbox" id="b"><label for="b">Ich bestätige, das ich der Urheber aller eingereichter
+                Bilder
+                bin.</label>
+                <input type="checkbox" id="c"><label for="c">Ich bestätige, das der Text nach bestem Treu und glauben
+                der
+                Wahrheit</label>
+                entspricht und
+                die Bilder nciht manipuliert wurden.
+            </fieldset>
+            <button>Account anlegen</button>
+            <button>Eingaben zurücksetzen</button>
+        </form>
+    </section>
 </main>
 
 <footer>
