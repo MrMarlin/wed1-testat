@@ -109,15 +109,19 @@ h2::before {
     content: counter(h2) " ";
 }
 
-iframe#calculator {
-    overflow: hidden;
-    height: 400px;
+iframe{
+    width: 100%;
+    height: calc(56.25vw - 2rem);
     border: none;
 }
 
-iframe#iphone-tricks {
-    height: 800px;
-    width: 1422px;
+iframe#calculator {
+    width: calc(50vw - 2rem);
+    max-width: 60rem;
+    max-height: 60rem;
+    overflow: hidden;
+    border-radius: 0.5vw;
+    box-shadow: 5px 5px 15px 0px;
 }
 
 /* images */
