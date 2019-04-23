@@ -1,6 +1,7 @@
 /**
  * core
  */
+"use strict";
 class Calculator {
     constructor() {
         this.setupOperatorDict();
