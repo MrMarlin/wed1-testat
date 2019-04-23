@@ -4,74 +4,80 @@
 class Calculator {
     constructor() {
         this.setupOperatorDict();
+        this.errorMessage = "Invalid Operation!";
         this.reset();
     }
 
     setupOperatorDict(){
         this.operatorDict = {};
-        this.operatorDict["+"] = function(left, right){
-            return parseInt(left)+ parseInt(right);
-        }
-        this.operatorDict["-"] = function(left, right){
+        this.operatorDict["+"] = (left, right)=>{
+            return left + right;
+        };
+        this.operatorDict["-"] = (left, right)=>{
             return left - right;
-        }
-        this.operatorDict["*"] = function(left, right){
+        };
+        this.operatorDict["*"] = (left, right)=>{
             return left * right;
-        }
-        this.operatorDict["/"] = function(left, right){
-            if(parseInt(right) == 0){
-                return "Invalid Operation!"
+        };
+        this.operatorDict["/"] = (left, right)=>{
+            if(right === 0){
+                return this.errorMessage;
             }
             return left / right;
-        }
+        };
     }
 
     softReset(){
-        this.left = "";
-        this.right = "";
+        this.left = null;
+        this.right = null;
         this.operator = null;
     }
 
     reset(){
-        this.lastResult = "0";
-        this.output = null;
+        this.lastResult = 0;
+        this.output = "Welcome";
         this.input = null;
         this.softReset();
     }
 
     setOperator(operator){
-        if(this.left == ""){
+        if(this.left === null){
             this.left = this.lastResult;
         }
         if(this.operator == null){
-            this.input = "";
+            this.input = null;
         }
         this.operator = operator;
-        this.output = this.left + operator;
+        this.output = this.left + " " + operator;
     }
 
-    setNumber(number){
+    setNumber(numberStr){
+        const number = parseInt(numberStr);
         if(this.operator == null){
-            this.left = this.left + number;
+            this.left = this.left*10 + number;
             this.input = this.left;
         } else {
-            this.right += number;
+            this.right = this.right*10 + number;
             this.input = this.right;
         }
     }
 
     calculate(){
-        if(this.left == "" || this.operator == null || this.right == ""){
+        if(this.left === null || this.operator == null || this.right === null){
             return;
         }
         this.input = this.operatorDict[this.operator](this.left, this.right);
-        if (this.input == "Invalid Operation!"){
+        if (this.input === this.errorMessage){
             this.lastResult = 0;
         } else{
             this.lastResult = this.input;
         }
-        this.output = this.left + this.operator + this.right;
+        this.output = this.left + " " + this.operator + " " + this.right;
         this.softReset();
+    }
+
+    hasError(){
+        return this.input === this.errorMessage;
     }
 }
 
@@ -99,7 +105,7 @@ function operatorPressed(event){
 }
 
 function commandPressed(event){
-    if(event.target.id == "key-=") {
+    if(event.target.id === "key-=") {
         calculator.calculate();
     }else{
         calculator.reset();
@@ -111,6 +117,8 @@ window.addEventListener('DOMContentLoaded', function() {
     const numbers = Array.from(document.getElementsByClassName("number"));
     input = document.getElementById("input");
     output = document.getElementById("output");
+    refresh();
+
     for(const number of numbers){
         number.addEventListener("click", numberPressed);
     }
@@ -130,7 +138,27 @@ window.addEventListener('DOMContentLoaded', function() {
  * Tests Scenarios
  */
 const testCalc = new Calculator();
-console.log(""/*TODO*/, "should be", 17);
-console.log(""/*TODO*/, "should be", 15);
-console.log(""/*TODO*/, "should be", 30);
-console.log(""/*TODO*/, "should be", true); // true = hasError
+
+testCalc.setNumber(4);
+testCalc.setOperator("+");
+testCalc.setNumber(13);
+testCalc.calculate();
+console.log(testCalc.input + " should be " + 17);
+
+testCalc.setNumber(20);
+testCalc.setOperator("-");
+testCalc.setNumber(5);
+testCalc.calculate();
+console.log(testCalc.input + " should be " + 15);
+
+testCalc.setNumber(6);
+testCalc.setOperator("*");
+testCalc.setNumber(5);
+testCalc.calculate();
+console.log(testCalc.input + " should be " + 30);
+
+testCalc.setNumber(4);
+testCalc.setOperator("/");
+testCalc.setNumber(0);
+testCalc.calculate();
+console.log(testCalc.hasError() + " should be " + true);
