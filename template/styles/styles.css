@@ -110,7 +110,10 @@ a[hreflang="en"]:before {
 .nav-ul {
     margin-left: 20px;
     list-style-type: none;
+}
 
+li > a{
+    color: #20609D;
 }
 
 footer {
@@ -155,9 +158,7 @@ iframe#calculator {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 20%;
-
-}
+    width: calc(100% - 100px);}
 
 figure > img {
     width: 100%;
