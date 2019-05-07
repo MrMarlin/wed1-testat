@@ -71,43 +71,40 @@ nav {
     margin: 5px;
 }
 
-
 a[hreflang="it"]:before {
-    display: inline-block;
+    display: block;
     content: '';
     background-image: url("../../media/flag-it.svg");
     width: 1.5em;
     height: 1em;
+    float: left;
     margin-right: 0.5em;
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 
 a[hreflang="fr"]:before {
-    display: inline-block;
+    display: block;
     content: '';
     background-image: url("../../media/flag-fr.svg");
     width: 1.5em;
     height: 1em;
+    float: left;
     margin-right: 0.5em;
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 
 a[hreflang="en"]:before {
-    display: inline-block;
+    display: block;
     content: '';
     background-image: url("../../media/flag-en.svg");
     width: 1.5em;
     height: 1em;
+    float: left;
     margin-right: 0.5em;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-}
-
-
-a:hover {
-    text-decoration: none;
 }
 
 .nav-ul {
@@ -115,11 +112,7 @@ a:hover {
     list-style-type: none;
 }
 
-small > a {
-    color: blue;
-}
-
-li > a {
+li > a{
     color: #20609D;
 }
 
@@ -130,8 +123,8 @@ footer {
     margin-top: 10px;
 }
 
-footer > a, footer > a:visited {
-    color: white;
+footer > a, a:visited{
+    color:white;
 }
 
 footer > address {
@@ -153,6 +146,10 @@ iframe#calculator {
     box-shadow: 5px 5px 15px 0px;
 }
 
+#TiNspireVideo {
+    width: calc(100vw - 100px);
+}
+
 /* images */
 #merch-calc {
     float: left;
@@ -165,8 +162,7 @@ iframe#calculator {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: calc(100% - 100px);
-}
+    width: calc(100% - 100px);}
 
 figure > img {
     width: 100%;
@@ -179,7 +175,7 @@ figcaption {
     margin-bottom: 10px;
 }
 
-#ccca-logo {
+#ccca-logo{
     vertical-align: middle;
 }
 
@@ -189,25 +185,21 @@ p {
     margin-bottom: 5px;
 }
 
-.last-edited {
-    background-color: transparent;
-    color: black;
+div.last-edited {
     border: 1px dotted;
     padding-top: 5px;
     padding-bottom: 5px;
-    padding-left: 2px;
-    padding-right: 2px;
     margin-top: 5px;
     margin-bottom: 5px;
 }
 
-.last-edited > p {
+div.last-edited > p {
     display: inline-block;
     margin: auto;
     padding-left: 5px;
 }
 
-.last-edited > time {
+div.last-edited > time {
     float: right;
     display: inline-block;
     margin: auto;
@@ -229,11 +221,11 @@ dd {
     padding-left: 15px;
 }
 
-dd::before {
+dd::before{
     content: "⌖ ";
 }
 
-ol {
+ol{
     list-style-position: inside;
 }
 
@@ -272,53 +264,20 @@ td {
 }
 
 /* forms */
-button {
+button{
     border: none;
     background-color: #20609D;
-    height: 40px;
-    padding: 0 10px;
+    height: 35px;
+    padding: 10px;
     color: white;
     border-radius: 5px;
     font-size: 18px;
-}
-
-button:active{
-    background-color: deeppink;
-}
-
-#search-ico {
-    height: 30px;
-    vertical-align: middle;
 }
 
 fieldset {
     border-color: #f5f5f5;
     margin-top: 15px;
     margin-bottom: 15px;
-}
-
-input::-webkit-calendar-picker-indicator {
-    display: none;
-}
-
-input:focus {
-    color: #20609D;
-}
-
-input:invalid {
-    background: red;
-}
-
-input[list="calculators"] {
-    border: none;
-    background-color: #f5f5f5;
-    border-bottom: black solid 1px;
-    height: 30px;
-}
-
-input[type="range"], #input-slider, output{
-    float:right;
-    margin: 5px;
 }
 
 .author {
@@ -335,10 +294,6 @@ input[type="range"], #input-slider, output{
 .author textarea {
     width: 100%;
     height: 300px;
-}
-
-.author textarea:focus {
-    color: #20609D;
 }
 
 .author input:not([type="radio"]), textarea, select {
@@ -358,7 +313,6 @@ input[type="range"], #input-slider, output{
     margin-top: 30px;
     margin-bottom: 30px;
 }
-
 
 #font-size-form {
     float: right;
