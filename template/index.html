@@ -6,7 +6,8 @@
     <meta name="description" content="WED Testat, Nachbau einer Wikipedia Seiter">
     <meta name="publisher" content="PS Webdesign">
     <title>Wikipraktika | Taschenrechner - tragbare, handliche elektronische Rechenmaschine</title>
-    <link rel="shortcut icon" type="image/x-icon" href="../media/icon-wikipraktika.png">
+    <link rel="shortcut" type="image/x-icon" href="../media/icon-wikipraktika.png">
+    <link rel="icon" type="image/x-icon" href="../media/icon-wikipraktika.png">
     <!-- TODO: author, publisher, description, bookmark icon -->
 
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
@@ -55,10 +56,16 @@
 
 
 <main>
+    <aside>
+        <output>1</output>
+        <input type="range" min="1" max="72">
+        <label id="input-slider">Schriftgrösse</label>
+    </aside>
     <section>
         <header>
             <h1 class="main-header">Taschenrechner</h1>
         </header>
+
         <article>
             <header>
                 <h1 class="article-header">Taschenrechner</h1>
@@ -161,7 +168,7 @@
                 voneinander
                 abweichende Ergebnisse.
             </p>
-            <sup>Source Wikipedia: <a href="https://de.wikipedia.org/wiki/Taschenrechner">de.wikipedia.org/wiki/Taschenrechner</a></sup>
+            <small>Source Wikipedia: <a href="https://de.wikipedia.org/wiki/Taschenrechner">de.wikipedia.org/wiki/Taschenrechner</a></small>
         </article>
         <article>
             <header>
@@ -185,12 +192,12 @@
                 </video>
                 <figcaption>TI-Nspire CX CAS Demonstration</figcaption>
             </figure>
-            <sup>Von TheConnerdy, <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.de">CC BY-SA 3.0,</a> <a
-                    href="https://www.youtube.com">via YouTube</a></sup>
-            <div class="last-edited">
+            <small>Von TheConnerdy, <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.de">CC BY-SA 3.0,</a> <a
+                    href="https://www.youtube.com">via YouTube</a></small>
+            <footer class="last-edited">
                 <p>Zuletzt geändert von Philipp Graf </p>
                 <time datetime="2016-02-11T12:45">Donnerstag, 11. Februar 2016, 12:45</time>
-            </div>
+            </footer>
         </article>
         <article>
             <header>
@@ -256,10 +263,10 @@
                     <a href="https://de.wikipedia.org/wiki/Taschenrechner">https://de.wikipedia.org/wiki/Taschenrechner</a>
                 </figcaption>
             </figure>
-            <div class="last-edited">
+            <footer class="last-edited">
                 <p>Zuletzt geändert von Gabriela Kant</p>
                 <time datetime="2016-02-11T10:09">Donnerstag, 11. Februar 2016, 10:09</time>
-            </div>
+            </footer>
         </article>
         <article>
             <header>
@@ -311,11 +318,12 @@
                     <td>550</td>
                 </tr>
             </table>
-            <img id="zeitgewinn" alt="Grafische Zeitdarstellung für den Zeitgewinn Verschiedener Rechenoperationen" src="../media/zeitgewinn.svg">
-            <div class="last-edited">
+            <img id="zeitgewinn" alt="Grafische Zeitdarstellung für den Zeitgewinn Verschiedener Rechenoperationen"
+                 src="../media/zeitgewinn.svg">
+            <footer class="last-edited">
                 <p>Zuletzt geändert von Leandra Gross</p>
                 <time datetime="2016-02-29T13:02">Freitag, 29. Februar 2016, 13:02</time>
-            </div>
+            </footer>
         </article>
         <article>
             <header>
@@ -327,10 +335,10 @@
                     <a href="https://www.youtube.com/watch?v=a7rcVgb41-0">youtube.com/watch?v=a7rcVgb41-0</a>
                 </figcaption>
             </figure>
-            <div class="last-edited">
+            <footer class="last-edited">
                 <p>Zuletzt geändert von Paul Sarner</p>
                 <time datetime="2016-02-10T18:38">Donnerstag, 10. Februar 2016, 18:38</time>
-            </div>
+            </footer>
         </article>
         <article>
             <header>
@@ -348,19 +356,31 @@
                 <li>HG Calc++</li>
                 <li>HG GO-ON</li>
             </ol>
-            <!--TODO: Last edited div in footer umwandeln-->
-            <div claass="last-edited">
+            <footer class="last-edited">
                 <p>Zuletz geändert von Petra Summer</p>
                 <time datetime="2019-02-11T14:13:00">Donnerstag, 11. Februar 2016, 14:13</time>
-            </div>
+            </footer>
         </article>
         <article>
             <header>
                 <h1 class="article-header"><a id="search"></a>Taschenrechner suchen nach Modell</h1>
             </header>
             <form action="index.html#search" method="get">
-                <input aria-label="" type="text" name="calc-search" value="">
-                <button id="search-btn" type="submit">Search</button>
+                <!--<input aria-label="" type="text" name="calc-search" value="">-->
+                <input list="calculators" type="search">
+                <datalist id="calculators">
+                    <option>Mexico Instrument TI 30</option>
+                    <option>Mexico Instrument TI 32</option>
+                    <option>Mexico Instrument D*D</option>
+                    <option>Casino UX5</option>
+                    <option>Casino TZZ</option>
+                    <option>Casino Basic</option>
+                    <option>HG Calc++</option>
+                    <option>HG Productive</option>
+                    <option>HG GO-ON</option>
+                </datalist>
+                <button id="search-btn" type="submit"><img id="search-ico" src="../media/icon-search.svg" alt="search-icon"> Search
+                </button>
             </form>
         </article>
         <aside>
@@ -380,19 +400,19 @@
                     </div>
                     <div class="name">
                         <label for="name">Name</label>
-                        <input type="text" id="name">
+                        <input type="text" id="name" required pattern="\w+( \w+)+">
                     </div>
                     <div class="email">
                         <label for="email">E-Mail</label>
-                        <input type="email" id="email">
+                        <input type="email" id="email" required>
                     </div>
                     <div class="website">
                         <label for="website">Webseite</label>
-                        <input type="url" id="website">
+                        <input type="url" id="website" required>
                     </div>
                     <div class="dob">
                         <label for="dob">Geburtsdatum</label>
-                        <input type="date" id="dob">
+                        <input type="date" id="dob" required>
                     </div>
                     <div class="nationality">
                         <label for="nationality">Nationalität</label>
@@ -623,8 +643,8 @@
                     </label>
                     </div>
                 </fieldset>
-                <button>Account anlegen</button>
-                <button>Eingaben zurücksetzen</button>
+                <button type="submit">Account anlegen</button>
+                <button type="reset">Eingaben zurücksetzen</button>
             </form>
         </aside>
     </section>
@@ -633,7 +653,8 @@
 <footer>
     <address>Bahnhofstrasse 42, 8000 Zürich</address>
     <a href="tel:+41554443322">055 444 33 22</a> <a href="mailto:info@wikipraktika.com">info@wikipraktika.com</a>
-    <p>Alle Inhalte von Wikipraktika stehen unter der <img id="ccca-logo" src="../media/ccca.png"> <a href="">Creative Commons Attribution-ShareAlike 4.0
+    <p>Alle Inhalte von Wikipraktika stehen unter der <img id="ccca-logo" src="../media/ccca.png" alt="ccca-logo"> <a href="">Creative
+        Commons Attribution-ShareAlike 4.0
         International License</a> und dürfen nur mit Nennung des Autors weiterverwendet werden. </p>
 </footer>
 </body>
