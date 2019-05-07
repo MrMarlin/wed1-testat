@@ -146,6 +146,10 @@ iframe#calculator {
     box-shadow: 5px 5px 15px 0px;
 }
 
+#TiNspireVideo {
+    width: calc(100vw - 100px);
+}
+
 /* images */
 #merch-calc {
     float: left;
@@ -309,9 +313,6 @@ fieldset {
     margin-top: 30px;
     margin-bottom: 30px;
 }
-
-
-
 
 #font-size-form {
     float: right;
