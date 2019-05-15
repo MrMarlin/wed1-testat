@@ -8,6 +8,14 @@
     padding: 0;
 }
 
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
 /* document */
 body {
     font-size: 1rem;
@@ -22,6 +30,7 @@ body > header {
     margin-bottom: 50px;
 }
 
+
 h1 {
     margin-top: 25px;
     margin-bottom: 15px;
@@ -34,7 +43,6 @@ h2 {
 .banner > a {
     padding-top: 10px;
     padding-left: 10px;
-    float: left;
 }
 
 .banner > h1 {
@@ -72,39 +80,65 @@ nav {
 }
 
 a[hreflang="it"]:before {
-    display: block;
+    display: inline-block;
     content: '';
     background-image: url("../../media/flag-it.svg");
     width: 1.5em;
     height: 1em;
-    float: left;
     margin-right: 0.5em;
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 
 a[hreflang="fr"]:before {
-    display: block;
+    display: inline-block;
     content: '';
     background-image: url("../../media/flag-fr.svg");
     width: 1.5em;
     height: 1em;
-    float: left;
     margin-right: 0.5em;
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 
 a[hreflang="en"]:before {
-    display: block;
+    display: inline-block;
     content: '';
     background-image: url("../../media/flag-en.svg");
     width: 1.5em;
     height: 1em;
-    float: left;
     margin-right: 0.5em;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+}
+
+a:active{
+    color: deeppink;
+}
+
+input:focus, textarea:focus{
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%, 60% {
+        transform: translate3d(4px, 0, 0);
+    }
 }
 
 .nav-ul {
@@ -112,7 +146,7 @@ a[hreflang="en"]:before {
     list-style-type: none;
 }
 
-li > a{
+li > a {
     color: #20609D;
 }
 
@@ -123,8 +157,12 @@ footer {
     margin-top: 10px;
 }
 
-footer > a, a:visited{
-    color:white;
+.imprint a {
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 footer > address {
@@ -152,7 +190,6 @@ iframe#calculator {
 
 /* images */
 #merch-calc {
-    float: left;
     width: 400px;
     padding: 20px;
     word-wrap: break-word;
@@ -162,10 +199,15 @@ iframe#calculator {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: calc(100% - 100px);}
+    width: calc(100% - 100px);
+}
 
 figure > img {
     width: 100%;
+}
+
+#ccca-logo:hover{
+    transform: scale(1.5);
 }
 
 figcaption {
@@ -175,7 +217,7 @@ figcaption {
     margin-bottom: 10px;
 }
 
-#ccca-logo{
+#ccca-logo {
     vertical-align: middle;
 }
 
@@ -185,22 +227,22 @@ p {
     margin-bottom: 5px;
 }
 
-div.last-edited {
+footer.last-edited {
+    background-color:white;
     border: 1px dotted;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 5px;
     margin-top: 5px;
     margin-bottom: 5px;
+    color: black;
 }
 
-div.last-edited > p {
+footer.last-edited > p {
     display: inline-block;
     margin: auto;
     padding-left: 5px;
 }
 
-div.last-edited > time {
-    float: right;
+footer.last-edited > time {
     display: inline-block;
     margin: auto;
     padding-right: 5px;
@@ -221,11 +263,11 @@ dd {
     padding-left: 15px;
 }
 
-dd::before{
+dd::before {
     content: "⌖ ";
 }
 
-ol{
+ol {
     list-style-position: inside;
 }
 
@@ -252,7 +294,13 @@ tr > th:nth-child(1) {
     text-align: left;
 }
 
-tr:nth-of-type(odd) {
+/*tr:nth-of-type(odd) {*/
+    /*background-color: #D9E6EF;*/
+    /*border-top: 2px solid #C7D3D9;*/
+    /*border-bottom: 2px solid #C7D3D9;*/
+/*}*/
+
+table tr:nth-child(even){
     background-color: #D9E6EF;
     border-top: 2px solid #C7D3D9;
     border-bottom: 2px solid #C7D3D9;
@@ -264,7 +312,7 @@ td {
 }
 
 /* forms */
-button{
+button {
     border: none;
     background-color: #20609D;
     height: 35px;
@@ -305,6 +353,12 @@ fieldset {
     margin-bottom: 10px;
 }
 
+
+
+input:invalid{
+    border-color: red;
+}
+
 .legal {
     padding: 5px;
 }
@@ -312,17 +366,6 @@ fieldset {
 .legal > div {
     margin-top: 30px;
     margin-bottom: 30px;
-}
-
-#font-size-form {
-    float: right;
-}
-
-#font-size-form > label, #font-size-form > input, #font-size-form > output {
-    display: inline-block;
-    vertical-align: middle;
-    padding: 0;
-    margin: 0;
 }
 
 label.sex-female, label.sex-male {
@@ -334,4 +377,16 @@ label.sex-female, label.sex-male {
 input.sex-female, input.sex-male {
     display: inline-block;
     padding: 5px;
+}
+
+.slider {
+    padding: 5px;
+}
+
+#search-ico{
+    height: 15px;
+}
+
+button:active{
+    background-color: deeppink;
 }

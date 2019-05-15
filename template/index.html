@@ -6,7 +6,7 @@
     <meta name="description" content="WED Testat, Nachbau einer Wikipedia Seiter">
     <meta name="publisher" content="PS Webdesign">
     <title>Wikipraktika | Taschenrechner - tragbare, handliche elektronische Rechenmaschine</title>
-    <link rel="shortcut" type="image/x-icon" href="../media/icon-wikipraktika.png">
+    <!--<link rel="shortcut" type="image/x-icon" href="../media/icon-wikipraktika.png">-->
     <link rel="icon" type="image/x-icon" href="../media/icon-wikipraktika.png">
     <!-- TODO: author, publisher, description, bookmark icon -->
 
@@ -14,7 +14,11 @@
 </head>
 <body>
 <header class="banner">
-    <a href="#"><img src="../media/logo-wikipraktika.svg" alt="wikipraktika Logo"></a>
+    <a href="#" class="left">
+        <object data="../media/logo-wikipraktika.svg" type="image/svg+xml" role="img">
+            <img role="img" src="../media/logo-wikipraktika.svg" alt="wikipraktika Logo"/>
+        </object>
+    </a>
     <h1>Wikipraktika</h1>
 </header>
 <h1>Navigation</h1>
@@ -57,9 +61,9 @@
 
 <main>
     <aside>
-        <output>1</output>
-        <input type="range" min="1" max="72">
-        <label id="input-slider">Schriftgrösse</label>
+        <output class="right slider">1</output>
+        <input class="right slider" type="range" min="1" max="72">
+        <label class="right slider" id="input-slider">Schriftgrösse</label>
     </aside>
     <section>
         <header>
@@ -83,7 +87,8 @@
                 als
                 Anzeige und
                 werden von einer Batterie oder Solarzelle mit Strom versorgt.</p>
-            <figure id="merch-calc"><img src="../media/900px-SCM_Marchant_calculator.jpg" alt="Merchant Calculator">
+            <figure id="merch-calc" class="left"><img src="../media/900px-SCM_Marchant_calculator.jpg"
+                                                      alt="Merchant Calculator">
                 <figcaption>By <a href="#">Bilby</a> - Own work, <a href="#">CC BY 3.0</a>
                     https://commons.wikimedia.org/w/index.php?curid=10980797
                 </figcaption>
@@ -168,7 +173,8 @@
                 voneinander
                 abweichende Ergebnisse.
             </p>
-            <small>Source Wikipedia: <a href="https://de.wikipedia.org/wiki/Taschenrechner">de.wikipedia.org/wiki/Taschenrechner</a></small>
+            <small>Source Wikipedia: <a href="https://de.wikipedia.org/wiki/Taschenrechner">de.wikipedia.org/wiki/Taschenrechner</a>
+            </small>
         </article>
         <article>
             <header>
@@ -192,11 +198,12 @@
                 </video>
                 <figcaption>TI-Nspire CX CAS Demonstration</figcaption>
             </figure>
-            <small>Von TheConnerdy, <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.de">CC BY-SA 3.0,</a> <a
-                    href="https://www.youtube.com">via YouTube</a></small>
+            <small>Von TheConnerdy, <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.de">CC BY-SA 3.0,</a>
+                <a
+                        href="https://www.youtube.com">via YouTube</a></small>
             <footer class="last-edited">
                 <p>Zuletzt geändert von Philipp Graf </p>
-                <time datetime="2016-02-11T12:45">Donnerstag, 11. Februar 2016, 12:45</time>
+                <time datetime="2016-02-11T12:45" class="right">Donnerstag, 11. Februar 2016, 12:45</time>
             </footer>
         </article>
         <article>
@@ -265,7 +272,7 @@
             </figure>
             <footer class="last-edited">
                 <p>Zuletzt geändert von Gabriela Kant</p>
-                <time datetime="2016-02-11T10:09">Donnerstag, 11. Februar 2016, 10:09</time>
+                <time datetime="2016-02-11T10:09" class="right">Donnerstag, 11. Februar 2016, 10:09</time>
             </footer>
         </article>
         <article>
@@ -273,13 +280,17 @@
                 <h1 class="article-header">Zeitgewinn</h1>
             </header>
             <table>
-                <thead aria-colspan="4">Zeitgewinn durch Benutzung eines Taschenrechners</thead>
+                <caption>Zeitgewinn durch Benutzung eines Taschenrechners</caption>
+                <thead  role="table">
                 <tr id="header">
                     <th></th>
                     <th>2-Stellen</th>
                     <th>3-Stellen</th>
                     <th>4-Stellen</th>
                 </tr>
+                </thead>
+                <tbody>
+
                 <tr>
                     <th>Addition / Subtraktion</th>
                     <td>4</td>
@@ -317,12 +328,13 @@
                     <td>75</td>
                     <td>550</td>
                 </tr>
+                </tbody>
             </table>
             <img id="zeitgewinn" alt="Grafische Zeitdarstellung für den Zeitgewinn Verschiedener Rechenoperationen"
-                 src="../media/zeitgewinn.svg">
+                 src="../media/zeitgewinn.svg" role="img">
             <footer class="last-edited">
                 <p>Zuletzt geändert von Leandra Gross</p>
-                <time datetime="2016-02-29T13:02">Freitag, 29. Februar 2016, 13:02</time>
+                <time datetime="2016-02-29T13:02" class="right">Freitag, 29. Februar 2016, 13:02</time>
             </footer>
         </article>
         <article>
@@ -337,7 +349,7 @@
             </figure>
             <footer class="last-edited">
                 <p>Zuletzt geändert von Paul Sarner</p>
-                <time datetime="2016-02-10T18:38">Donnerstag, 10. Februar 2016, 18:38</time>
+                <time datetime="2016-02-10T18:38" class="right">Donnerstag, 10. Februar 2016, 18:38</time>
             </footer>
         </article>
         <article>
@@ -358,7 +370,7 @@
             </ol>
             <footer class="last-edited">
                 <p>Zuletz geändert von Petra Summer</p>
-                <time datetime="2019-02-11T14:13:00">Donnerstag, 11. Februar 2016, 14:13</time>
+                <time datetime="2019-02-11T14:13:00" class="right">Donnerstag, 11. Februar 2016, 14:13</time>
             </footer>
         </article>
         <article>
@@ -366,7 +378,6 @@
                 <h1 class="article-header"><a id="search"></a>Taschenrechner suchen nach Modell</h1>
             </header>
             <form action="index.html#search" method="get">
-                <!--<input aria-label="" type="text" name="calc-search" value="">-->
                 <input list="calculators" type="search">
                 <datalist id="calculators">
                     <option>Mexico Instrument TI 30</option>
@@ -379,7 +390,8 @@
                     <option>HG Productive</option>
                     <option>HG GO-ON</option>
                 </datalist>
-                <button id="search-btn" type="submit"><img id="search-ico" src="../media/icon-search.svg" alt="search-icon"> Search
+                <button id="search-btn" type="submit"><img id="search-ico" src="../media/icon-search.svg" role="img"
+                                                           alt="search-icon"> Search
                 </button>
             </form>
         </article>
@@ -650,10 +662,11 @@
     </section>
 </main>
 
-<footer>
+<footer class="imprint">
     <address>Bahnhofstrasse 42, 8000 Zürich</address>
     <a href="tel:+41554443322">055 444 33 22</a> <a href="mailto:info@wikipraktika.com">info@wikipraktika.com</a>
-    <p>Alle Inhalte von Wikipraktika stehen unter der <img id="ccca-logo" src="../media/ccca.png" alt="ccca-logo"> <a href="">Creative
+    <p>Alle Inhalte von Wikipraktika stehen unter der <img id="ccca-logo" src="../media/ccca.png" alt="ccca-logo"> <a
+            href="http://www.creativecommons.ch/" target="_blank">Creative
         Commons Attribution-ShareAlike 4.0
         International License</a> und dürfen nur mit Nennung des Autors weiterverwendet werden. </p>
 </footer>
