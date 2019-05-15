@@ -1,23 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="P.Bolliger/S.Lehner">
     <meta name="description" content="WED Testat, Nachbau einer Wikipedia Seiter">
     <meta name="publisher" content="PS Webdesign">
     <title>Wikipraktika | Taschenrechner - tragbare, handliche elektronische Rechenmaschine</title>
-    <!--<link rel="shortcut" type="image/x-icon" href="../media/icon-wikipraktika.png">-->
     <link rel="icon" type="image/x-icon" href="../media/icon-wikipraktika.png">
-    <!-- TODO: author, publisher, description, bookmark icon -->
 
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
 </head>
 <body>
 <header class="banner">
-    <a href="#" class="left">
-        <object data="../media/logo-wikipraktika.svg" type="image/svg+xml" role="img">
-            <img role="img" src="../media/logo-wikipraktika.svg" alt="wikipraktika Logo"/>
-        </object>
+    <a href="#" class="left svg">
+        <img src="../media/logo-wikipraktika.svg" alt="wikipraktika Logo"/>
     </a>
     <h1>Wikipraktika</h1>
 </header>
@@ -281,7 +277,7 @@
             </header>
             <table>
                 <caption>Zeitgewinn durch Benutzung eines Taschenrechners</caption>
-                <thead  role="table">
+                <thead role="table">
                 <tr id="header">
                     <th></th>
                     <th>2-Stellen</th>
@@ -330,8 +326,11 @@
                 </tr>
                 </tbody>
             </table>
-            <img id="zeitgewinn" alt="Grafische Zeitdarstellung für den Zeitgewinn Verschiedener Rechenoperationen"
-                 src="../media/zeitgewinn.svg" role="img">
+
+            <object id="zeitgewinn" data="../media/zeitgewinn.svg" type="image/svg+xml" role="img">
+                <span>Grafische Zeitdarstellung für den Zeitgewinn Verschiedener Rechenoperationen</span>
+            </object>
+
             <footer class="last-edited">
                 <p>Zuletzt geändert von Leandra Gross</p>
                 <time datetime="2016-02-29T13:02" class="right">Freitag, 29. Februar 2016, 13:02</time>
@@ -390,7 +389,7 @@
                     <option>HG Productive</option>
                     <option>HG GO-ON</option>
                 </datalist>
-                <button id="search-btn" type="submit"><img id="search-ico" src="../media/icon-search.svg" role="img"
+                <button id="search-btn" type="submit"><img id="search-ico" src="../media/icon-search.svg"
                                                            alt="search-icon"> Search
                 </button>
             </form>
